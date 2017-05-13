@@ -1,1 +1,1 @@
-Welcome to the expipe-plugin-cinpla wiki!
+Welcome to the expipe wiki!
