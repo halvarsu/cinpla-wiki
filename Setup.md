@@ -3,12 +3,14 @@ The following steps need to be performed to set up Expipe in CINPLA:
 - [Setup Norstore](CINPLA_setup_Norstore)
 - [Install Anaconda](https://www.continuum.io/downloads)
 - Open a terminal with Anaconda
-- Install expipe and the other applications: 
+- [Install expipe-dev](https://github.com/CINPLA/expipe-dev)
+or
+- Install expipe and the other applications from conda
 
     ```
     conda create -n expipe
     source activate expipe
-    conda install expipe expipe-cli expipe-browser exdir-cli exdir-browser expipe-io-neuro pyxona exana -c defaults -c cinpla/label/dev -c cinpla -c conda-forge
+    conda install expipe expipe-cli expipe-browser exdir-cli exdir-browser expipe-io-neuro pyxona exana expipe-plugin-cinpla -c defaults -c cinpla/label/dev -c cinpla -c conda-forge
     pip install pyrebase
     ```
 
@@ -24,7 +26,7 @@ The following steps need to be performed to set up Expipe in CINPLA:
 ```python
 import expipe
 expipe.configure(
-    data_path="w:\\server",
+    data_path="c:/users/uiousername/expipe_temp_storage",
     email="<write your email here>",
     password="<write your password here>",
     url_prefix="expipe-26506",
@@ -38,7 +40,7 @@ You might need to change the data_path if you have a different path to Norstore.
 If you want to copy and paste the config, here is an example config file:
 
 ```yaml
-data_path: w:\\server
+data_path: c:/users/uiousername/expipe_temp_storage
 server:
   data_path: /norstore_osl/projects/NS9048K/server
   username: <norstore username>
