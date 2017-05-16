@@ -55,6 +55,10 @@ firebase:
     storageBucket: expipe-26506.appspot.com
 ```
 
+## User parameters ##
+
+In order to suit your special needs you must make a parameters file which should be located in ~/.config/expipe for an example file; see [expipe_params.py](https://github.com/CINPLA/expipe-plugin-cinpla/blob/master/utils/expipe_params.py).
+
 ## Testing ##
 
 **WARNING**: Tests can be destructive and have to be run on a different server. Use `expipe-debug.firebaseio.com` for testing.
