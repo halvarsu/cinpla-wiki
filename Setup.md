@@ -4,7 +4,25 @@ The following steps need to be performed to set up Expipe in CINPLA:
 - [Install Anaconda](https://www.continuum.io/downloads)
 - Open a terminal with Anaconda
 - [Install expipe-dev](https://github.com/CINPLA/expipe-dev)
+
+We recommend installing the [expipe-dev](https://github.com/CINPLA/expipe-dev) package.
+
+  $ git clone https://github.com/CINPLA/expipe-dev.git
+
+Due to dependency issues we have to make two separate environments, one for
+phy and one for expipe with browsers. These environments will hopefully
+be possible to merge in the near future.
+
+  cd expipe-dev
+  conda env create -f expipe-environment.yml
+  activate expipe
+  python setup.py develop --extra browser
+  conda env create -f phy-environment.yml
+  activate phy
+  python setup.py develop --extra phy
+
 or
+
 - Install expipe and the other applications from conda
 
     ```
