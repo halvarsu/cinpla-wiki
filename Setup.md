@@ -90,8 +90,6 @@ A separate config file needs to be created if you want to run tests. The config 
 allow_tests: true
 data_path: '/tmp/expipe-data'
 firebase:
-  email: <needs to be changed>
-  password: <needs to be changed>
   config:
     apiKey: AIzaSyBnbsraKxrO8zv1qVZeAvJR4fEWzExQhOM
     authDomain: expipe-debug.firebaseapp.com
