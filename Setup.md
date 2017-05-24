@@ -88,7 +88,7 @@ A separate config file needs to be created if you want to run tests. The config 
 
 ```yaml
 allow_tests: true
-data_path: '/tmp/expipe-data'
+data_path: '/tmp/expipe_data'
 firebase:
   config:
     apiKey: AIzaSyBnbsraKxrO8zv1qVZeAvJR4fEWzExQhOM
