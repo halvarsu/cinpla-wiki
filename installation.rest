@@ -19,8 +19,8 @@ General
 -------
 
 We recommend installing the expipe dev package found at
-https://github.com/CINPLA/expipe-dev, clone with your favorit git software, on
-the command line write::
+https://github.com/CINPLA/expipe-dev, clone with your favorite git software (or use Anaconda prompt that you just installed).
+On the command line write::
 
   $ git clone https://github.com/CINPLA/expipe-dev.git
 
@@ -44,9 +44,11 @@ Configuring expipe
 ------------------
 
 Now that you have the enviroments installed you need to configure expipe. In
-``c:\apps\expipe-plugin-cinpla/utils`` you will find example configuration files.
+``c:\apps\expipe-dev\expipe-plugin-cinpla/utils`` you will find example configuration files.
 Start by copying all files to ``c:/users/uiousername/.config/expipe``.
-Open ``config.yaml`` with Atom, edit according to your user information.
+
+Start Atom.
+Open file ``config.yaml`` and edit according to your user information.
 Remove processing if you do not know what it is for.
 
 .. code-block:: yaml
