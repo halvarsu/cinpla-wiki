@@ -19,20 +19,19 @@ General
 -------
 
 We recommend installing the expipe dev package found at
-https://github.com/CINPLA/expipe-dev, clone with your favorite git software (or use Anaconda prompt that you just installed).
+https://github.com/CINPLA/expipe-dev, clone with your favorite git software.
 On the command line write::
 
   $ git clone https://github.com/CINPLA/expipe-dev.git
 
 Due to dependency issues we have to make two separate environments, one for
 phy and one for expipe with browsers. These environments will hopefully
-be possible to merge in the near future.
+be possible to merge in the near future. In short, install an expipe environment with browsers, and a phy environment
+for spikesorting.  
 
-In short, install an expipe environment with browsers, and a phy environment
-for spikesorting. Remember that you can not copy paste everything in to the
-command line and press enter - copy paste and press enter on one by one line::
+Windows: open anaconda prompt from start menu. ''cd c:\apps\expipe-dev'' 
+Remember that you can not copy paste everything in to the command line - copy paste and press enter on one by one line::
 
-  cd c:\apps\expipe-dev
   conda env create -f expipe-environment.yml
   activate expipe
   python setup.py develop --extra browser
