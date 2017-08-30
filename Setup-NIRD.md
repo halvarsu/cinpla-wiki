@@ -20,7 +20,7 @@ Register for an account here:
 
 https://www.metacenter.no/user/application/form/norstore/
 
-Or ssh: uiobrukernavn@login.nird.sigma2.no.
+Or ssh: nird_username@login.nird.sigma2.no.
 
 PS! It might take a couple of days before your account is ready for use.
 
