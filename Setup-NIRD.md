@@ -1,8 +1,8 @@
 # Note
 to change user access
 
-1) find /projects/NS9048K -uid ##### -type d -exec chmod g+rx {} \;
-2) find /projects/NS9048K -uid ##### -exec chmod g+r {} \;
+1) `find /projects/NS9048K -uid ##### -type d -exec chmod g+rx {} \;`
+2) `find /projects/NS9048K -uid ##### -exec chmod g+r {} \;`
 
 '#####' må erstattes med den enkeltes uid (finnes ved å kjøre kommandoen 'id' )
 og deretter vil 1) finne alle mapper denne eier og åpne for lesing. 2) gjøre
