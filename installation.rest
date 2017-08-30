@@ -11,14 +11,12 @@ Windows
 * Download and install `Anaconda <https://www.continuum.io/downloads>`_
 * Download and install `Github desktop <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`_
 
-In CINPLA on windows, we recommend to put all expipe related softare in
-
-``c:\apps\``.
+In CINPLA on windows, we recommend to make a folder c:\apps\ where you put all expipe related software.
 
 General
 -------
 
-We recommend installing the expipe dev package found at
+1. Install the expipe dev package found at
 https://github.com/CINPLA/expipe-dev, clone with your favorite git software.
 On the command line write::
 
@@ -30,6 +28,7 @@ be possible to merge in the near future. In short, install an expipe environment
 for spikesorting.  
 
 Windows: open anaconda prompt from start menu. ''cd c:\apps\expipe-dev'' 
+Note: you may not use [Ctrl]+V to paste into anaconda, push both mouse buttons at the same time.
 Remember that you can not copy paste everything in to the command line - copy paste and press enter on one by one line::
 
   conda env create -f expipe-environment.yml
