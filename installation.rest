@@ -29,7 +29,7 @@ phy and one for expipe with browsers. These environments will hopefully
 be possible to merge in the near future.
 
 In short, install an expipe environment with browsers, and a phy environment
-for spikesoting, remember that you can not copy paste everything in to the
+for spikesorting. Remember that you can not copy paste everything in to the
 command line and press enter - copy paste and press enter on one by one line::
 
   cd c:\apps\expipe-dev
@@ -43,7 +43,7 @@ command line and press enter - copy paste and press enter on one by one line::
 Configuring expipe
 ------------------
 
-Now that you have the enviroments installed you need to configure expipe. In
+Now that you have the environments installed you need to configure expipe. In
 ``c:\apps\expipe-dev\expipe-plugin-cinpla/utils`` you will find example configuration files.
 Start by copying all files to ``c:/users/uiousername/.config/expipe``.
 
