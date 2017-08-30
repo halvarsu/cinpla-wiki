@@ -7,9 +7,9 @@ Installation
 Windows
 -------
 
-Download and install `Atom <https://atom.io/>`_
-Download and install `Anaconda <https://www.continuum.io/downloads>`_
-Download and install `Github desktop <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`_
+* Download and install `Atom <https://atom.io/>`_
+* Download and install `Anaconda <https://www.continuum.io/downloads>`_
+* Download and install `Github desktop <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`_
 
 In CINPLA on windows, we recommend to put all expipe related softare in
 
