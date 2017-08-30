@@ -11,7 +11,7 @@ Windows
 * Download and install `Anaconda <https://www.continuum.io/downloads>`_
 * Download and install `Github desktop <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`_
 
-In CINPLA on windows, we recommend to make a folder c:\apps\ where you put all expipe related software.
+In CINPLA on windows, we recommend to make a folder ``c:\apps\`` where you put all expipe related software.
 
 General
 -------
@@ -27,7 +27,7 @@ phy and one for expipe with browsers. These environments will hopefully
 be possible to merge in the near future. In short, install an expipe environment with browsers, and a phy environment
 for spikesorting.  
 
-Windows: open anaconda prompt from start menu. ''cd c:\apps\expipe-dev'' 
+Windows: open anaconda prompt from start menu. ``cd c:\apps\expipe-dev`` 
 Note: you may not use [Ctrl]+V to paste into anaconda, push both mouse buttons at the same time.
 Remember that you can not copy paste everything in to the command line - copy paste and press enter on one by one line::
 
@@ -41,8 +41,8 @@ Remember that you can not copy paste everything in to the command line - copy pa
 Configuring expipe
 ------------------
 
-Now that you have the environments installed you need to configure expipe. In
-``c:\apps\expipe-dev\expipe-plugin-cinpla/utils`` you will find example configuration files.
+Now that you have the environments installed you need to configure expipe.  
+In ``c:\apps\expipe-dev\expipe-plugin-cinpla/utils`` you will find example configuration files.
 Start by copying all files to ``c:/users/uiousername/.config/expipe``.
 
 Start Atom.
