@@ -62,7 +62,7 @@ WinSshFS.exe must be placed in the Startup folder in order for norstore to be mo
 
 You may want to test the connection to Norstore first (replace uiousername with your username at UiO):
 
-    ssh uiousername@login.nird.sigma2.no
+    ssh nird_username@login.nird.sigma2.no
 
 To mount the disk on Linux, you need to install SSHFS and mount our project folder on Norstore to /media/norstore.
 
