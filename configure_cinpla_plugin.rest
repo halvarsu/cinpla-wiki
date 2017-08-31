@@ -18,17 +18,17 @@ Reserved names:
 
 .. code-block:: python
 
-  #  these are templates you want to add to each recording perfomed with axona
-  axona_templates = [
-      '_inherit_hardware_axona_tracker',
-      '_inherit_hardware_axona_daq',
-      '_inherit_hardware_axona_camera_objective',
-      '_inherit_environment_open_field_tracking',
-      '_inherit_environment_rat_housing',
-      '_inherit_hardware_optic_fibre',
-      '_inherit_hardware_tetrode',
-      '_inherit_hardware_microdrive_optetrode'
-  ]
+#  these are templates you want to add to each recording perfomed with axona
+axona_templates = [
+    '_inherit_hardware_axona_tracker',
+    '_inherit_hardware_axona_daq',
+    '_inherit_hardware_axona_camera_objective',
+    '_inherit_environment_open_field_tracking',
+    '_inherit_environment_rat_housing',
+    '_inherit_hardware_optic_fibre',
+    '_inherit_hardware_tetrode',
+    '_inherit_hardware_microdrive_optetrode'
+]
 
 
 #  these are templates you want to add to each recording perfomed with
