@@ -44,7 +44,7 @@ install sshfs 1.5.12.8 https://github.com/Foreveryone-cz/win-sshfs/releases/tag/
  - press Add
  - on the left side you can now fill in information
  - Drive name: norstore
- - Host: login.norstore.uio.no
+ - Host: login.nird.sigma2.no
  - Port: 22
  - Username: username
  - Password: password
