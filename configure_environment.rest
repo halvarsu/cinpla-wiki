@@ -13,6 +13,25 @@ will be overloaded for that particular action.
 Reserved names:
     ``subject``, ``electrophysiology``, ``implantation``, ``injection``
 
+Setting up an environment
+-------------------------
+
+In order to work on different projects with different needs the user have to set up environments for the respective projects. This is solved with environment module, first set up a parameter file as below::
+
+    $ expipe env set my_project_id --params my_project_id.py
+
+If you are using open ephys you also need to set up the channel mapping in a probe file called e.g. ``my_probe.prb``. This probe file is attached to your environment with the following::
+
+    $ expipe env set my_project_id --probe my_probe.prb
+
+To see which files are active in your current environment use::
+
+    $ expipe env status
+
+You can remove an environment with::
+
+    $ expipe env remove my_project_id
+
 Minimal parameter file
 ----------------------
 
