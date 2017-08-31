@@ -56,10 +56,10 @@ Remove processing if you do not know what it is for.
     data_path: /home/user/expipe_temp_storage
     username: <processing server username>
     hostname: user@ipaddress
-  norstore:
-    data_path: /norstore_osl/projects/NS9048K/server
+  nird:
+    data_path: /projects/NS9048K/NORSTORE_OSL_DISK/NS9048K/server
     username: <norstore username>
-    hostname: login.norstore.uio.no
+    hostname: login.nird.sigma2.no
   firebase:
     email: your@email.com
     password: yourpassword
