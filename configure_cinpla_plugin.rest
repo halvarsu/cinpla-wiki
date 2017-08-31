@@ -16,6 +16,8 @@ Reserved names:
 Minimal parameter file
 ----------------------
 
+.. code-block:: python
+
   # this is personal user parameters
   USER_PARAMS = {
       'project_id': 'hyp',
