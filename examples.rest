@@ -35,6 +35,12 @@ Furthermore if you want help on one particular command::
 
   $ expipe transfer --help
 
+  data_path: c:/users/uiousername/expipe_temp_storage
+  nird:
+    data_path: /projects/NS9048K/NORSTORE_OSL_DISK/NS9048K/server
+    username: <norstore username>
+    hostname: login.norstore.uio.no
+
 Transfer data to and from server
 --------------------------------
 
