@@ -4,11 +4,9 @@ Setting up an expipe environment with parameter file
 In order to collect all information about which templates to use, analysis parameters, user name, project name etc.
 we store this information in an expipe params file which you can call e.g. ``my_project_id.py``
 
-.. code-block:: python
-
-If you add _inherit_ before the name of a template it is asumed that you
+If you add _inherit_ before the name of a template it is assumed that you
 want to "inherit" this module from the project. This is for modules
-that are general and which you dont want to repeat in every action.
+that are general and which you don't want to repeat in every action.
 Note that you can modify these modules afterwords, then the modification
 will be overloaded for that particular action.
 
@@ -17,9 +15,9 @@ Reserved names:
     electrophysiology
     implantation
     injection
-'''
 
-
+.. code-block:: python
+```
 #  these are templates you want to add to each recording perfomed with axona
 axona_templates = [
     '_inherit_hardware_axona_tracker',
@@ -180,3 +178,4 @@ MODULES = {
     'injection': {'ms': 'mikkel_injection_ms'},
     'subject': 'mikkel_subject'
 }
+```
