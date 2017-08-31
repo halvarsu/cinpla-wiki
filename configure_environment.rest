@@ -24,6 +24,14 @@ If you are using open ephys you also need to set up the channel mapping in a pro
 
     $ expipe env set my_project_id --probe my_probe.prb
 
+To activate during set::
+
+    $ expipe env set my_project_id --probe my_probe.prb --activate
+
+To activate an environment::
+
+    $ expipe env activate my_project_id
+
 To see which files are active in your current environment use::
 
     $ expipe env status
@@ -37,6 +45,7 @@ Minimal parameter file
 
 .. code-block:: python
 
+  import quantities as pq
   # this is personal user parameters
   USER_PARAMS = {
       'project_id': 'hyp',
@@ -75,6 +84,7 @@ Detailed parameter file
 
 .. code-block:: python
 
+  import quantities as pq
   #  these are templates you want to add to each recording perfomed with axona
   axona_templates = [
       '_inherit_hardware_axona_tracker',
