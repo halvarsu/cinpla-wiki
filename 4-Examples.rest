@@ -24,6 +24,20 @@ instrument, ``processing`` contains extracted data which is and shall be process
 Finnaly, in the ``analysis`` folder, you will find figures etc. after analysis
 is perfomed.
 
+Expipe browser
+--------------
+
+To browser projects and actions you can use::
+
+  $ expipe-browser
+
+Exdir browser
+--------------
+
+To browser an exdir file you can use::
+
+  $ exdir-browser
+
 General
 -------
 
