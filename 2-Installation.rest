@@ -38,6 +38,13 @@ Remember that you can not copy paste everything in to the command line - copy pa
   activate phy
   python setup.py develop --extra phy
 
+Update a conda environment
+--------------------------
+
+Lets assume you have activated an environment and want to update the packages as defined in e.g. ``expipe-environment.yml`` you can use::
+
+    $ conda env update -f expipe-environment.yml
+
 Configuring expipe
 ------------------
 
