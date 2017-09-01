@@ -47,7 +47,7 @@ Windows: From Anaconda prompt you have to make the folder ``c:/users/uiousername
    cd c:/users/uiousername
    mkdir .config
 
-Now you can use whatever program you want to copy the configuration files into this folder.
+Now you can use whatever program you want make the expipe folder and copy the configuration files.
 In ``c:\apps\expipe-dev\expipe-plugin-cinpla\utils`` you will find example configuration files.
 Start by copying all files to ``c:/users/uiousername/.config/expipe``.
 
