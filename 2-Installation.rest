@@ -7,7 +7,7 @@ Installation
 Windows
 -------
 
-* Download and install `Atom <https://atom.io/>` (Python editor)_
+* Download and install `Atom <https://atom.io/>`_ (Python editor)
 * Download and install `Anaconda <https://www.continuum.io/downloads>`_
 * Download and install `Github desktop <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`_
 
@@ -42,7 +42,7 @@ Configuring expipe
 ------------------
 
 Now that you have the environments installed you need to configure expipe.  
-Windows: From Anaconda prompt you have to make the folder ``c:/users/uiousername/.config/expipe``
+Windows: From Anaconda prompt you have to make the folder ``c:/users/uiousername/.config/expipe``::
 
    cd c:/users/uiousername
    mkdir .config
