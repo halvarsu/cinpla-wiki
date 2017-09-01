@@ -133,7 +133,7 @@ Open Anaconda 3 prompt::
 To get an overview of available commands::
   expipe --help
 For help på en spesifikk kommando::
-  expipe axona register --help
+  expipe axona openephys --help
 
 To overwrite existing data use ``--overwrite``::
 
@@ -159,19 +159,17 @@ Open Anaconda 3 prompt::
 
   activate phy
 
-To get an overview of available commands::
-  expipe --help
-For help på en spesifikk kommando::
-  expipe openephys register --help
+Be sure you have registered a proper probefile with::
+
+    $ expipe env set project_id --probe my_probe_file.prb --activate
 
 To overwrite existing data use ``--overwrite``::
 
-  expipe openephys register c:\open_ephys\data\1704_2017-05-13_13-52-26_03
+    $ expipe openephys register c:\open_ephys\data\1704_2017-05-13_13-52-26_03
 
 Now modules are loaded to the firebase server and depth registration
 is promted to the user.
 
-.. todo:: probefile etc.
 
 **Data processing**::
 
@@ -197,22 +195,23 @@ Plotting og analysis
 
 **Make png figurer**::
 
-  $ expipe analyse ACTION-ID --spatial
+  $ expipe analyse ACTION-ID --analyse spatial --analyse spike-stat
 
 If you only want to look at a particular channel group::
 
-  $ expipe analyse ACTION-ID --channel-group 0
+  $ expipe analyse ACTION-ID -a all --channel-group 0
 
 **Register cells and transfer data to norstore**
 
-When your are finished with the analysis you want to produce a representation
-of the channel groups on the firebase server. This can be performed with the
-command::
+When your are finished with the analysis you want to write a summary of your findings, you can
+annotate the action with::
 
-  $ expipe register-units ACTION-ID --tag GC --tag BC --message "found a beatiful grid cell on channel group 2"
+  $ expipe annotate ACTION-ID --tag GC --tag BC --message "found a beautiful grid cell on channel group 2"
 
 *Example tags:*
 Bare dritt: no, Good shit: yes, Vet ikke: maybe, Head direction: HD, Grid cell: GC,
 Place cell: PC, Spatial cell: SC, Boarder cell: BC.
+
+The tags you want to use should be added to POSSIBLE_TAGS
 
 Go to `SERVER/PROJECT/ACTION-ID/main.exdir/analysis` to check out the results.
