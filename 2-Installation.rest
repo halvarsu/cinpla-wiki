@@ -7,7 +7,7 @@ Installation
 Windows
 -------
 
-* Download and install `Atom <https://atom.io/>`_
+* Download and install `Atom <https://atom.io/>` (Python editor)_
 * Download and install `Anaconda <https://www.continuum.io/downloads>`_
 * Download and install `Github desktop <https://github-windows.s3.amazonaws.com/GitHubSetup.exe>`_
 
@@ -42,7 +42,12 @@ Configuring expipe
 ------------------
 
 Now that you have the environments installed you need to configure expipe.  
-In ``c:\apps\expipe-dev\expipe-plugin-cinpla/utils`` you will find example configuration files.
+Windows: From Anaconda prompt you have to make the folder ``c:/users/uiousername/.config/expipe``
+$ cd c:/users/uiousername
+$ mkdir .config
+
+Now you can use whatever program you want to copy the configuration files into this folder.
+In ``c:\apps\expipe-dev\expipe-plugin-cinpla\utils`` you will find example configuration files.
 Start by copying all files to ``c:/users/uiousername/.config/expipe``.
 
 Start Atom.
