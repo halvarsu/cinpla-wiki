@@ -1,0 +1,10 @@
+Anaconda prompt (Windows)
+-------------------------
+
+To maximize the terminal window simply type::
+
+    $ wmic
+
+and then resize followed by ``ctrl-c``
+
+Copy pasting must be done with right click
