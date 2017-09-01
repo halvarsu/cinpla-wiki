@@ -43,8 +43,9 @@ Configuring expipe
 
 Now that you have the environments installed you need to configure expipe.  
 Windows: From Anaconda prompt you have to make the folder ``c:/users/uiousername/.config/expipe``
-$ cd c:/users/uiousername
-$ mkdir .config
+
+  $ cd c:/users/uiousername
+  $ mkdir .config
 
 Now you can use whatever program you want to copy the configuration files into this folder.
 In ``c:\apps\expipe-dev\expipe-plugin-cinpla\utils`` you will find example configuration files.
