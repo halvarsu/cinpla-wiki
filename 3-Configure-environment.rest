@@ -75,8 +75,7 @@ Minimal parameter file
       'implantation': {'mecl': 'mikkel_implant_drive_mecl',
                        'mecr': 'mikkel_implant_drive_mecr',
                        'ms': 'mikkel_implant_fibre_ms'},
-      'injection': {'ms': 'mikkel_injection_ms'},
-      'subject': 'mikkel_subject'
+      'injection': {'ms': 'mikkel_injection_ms'}
   }
 
 Detailed parameter file
