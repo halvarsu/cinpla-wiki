@@ -1,0 +1,79 @@
+Add project
+-----------
+This is done in the expipe-browser > Create new
+
+Make config
+-----------
+See config page
+
+Activate environment
+--------------------
+See config page
+
+Register subject
+----------------
+
+Subjects are registered under the project-id ``subjects-registry``. This is to
+have a complete overview of animals in the lab i.e. `active`, `dead`, `newborn`
+which information is stored in tags. To register a subject use ``register-subject``::
+
+  $ expipe register-subject SUBJECT --birthday 01.02.2017 --cell_line wild-type --tag active
+
+Registering surgery
+-------------------
+
+When performing surgery you can register information with the ``register-surgery``
+command.::
+
+  $ expipe register-surgery SUBJECT --date 14.05.2017:12:35 --procedure implantation --weight 400
+
+Drive adjustment
+----------------
+
+The first time you want to adjust the brain-area ``X``, ``Y``
+(referring to ``PAR.MODULES['implantation']['X']``) of a drive or channel group
+an amount of ``um`` you need to
+initialize an adjustment `action` with the command::
+
+  $ expipe adjust SUBJECT --init
+
+When you have initialized and later make a new adjustment, e.g. let ``X`` be a microdrive in 
+medial entorhinal cortex left hemisphere (mecl) and ``Y`` be in mecr adjusting 50 um on each drive::
+
+  $ expipe adjust SUBJECT --date dd.mm.yyyyTHH:MM --adjustment "mecl 0 50 um" --adjustment "mecr 0 50 um"
+
+If you use a flexdrive where you can adjust each channel group you can use the number after the 
+key pointing to the implant template (mecl/mecr)::
+
+  $ expipe adjust SUBJECT --date dd.mm.yyyyTHH:MM --adjustment "mecl 0 50 um" --adjustment "mecl 1 50 um"
+
+Note that in stead of ``--date dd.mm.yyyyTHH:MM`` can use ``-d now``.
+
+Working with Axona
+------------------
+
+Open Anaconda 3 prompt::
+
+  activate phy
+
+To get an overview of available commands::
+  expipe --help
+For help på en spesifikk kommando::
+  expipe axona openephys --help
+
+To overwrite existing data use ``--overwrite``::
+
+  expipe axona register z:\USER\DATA\SUBJECT\FILENAME.set
+
+Now modules are loaded to the firebase server and depth registration
+is promted to the user.
+
+**Spikesorting**::
+
+  $ expipe spikesort ACTION-ID
+
+Manual spikesoring with phy::
+
+  $ phy neo-gui c:\user\uiousername\expipe_temp_storage\ACTION-ID\main.exdir --channel-group 0
+
+Save with `ctrl-s`
