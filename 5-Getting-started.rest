@@ -1,3 +1,7 @@
+Open Anaconda:: 
+
+$ activate expipe
+ 
 Add project
 -----------
 This is done in the expipe-browser > Create new
