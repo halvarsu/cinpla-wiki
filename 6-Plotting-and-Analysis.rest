@@ -1,7 +1,17 @@
 Pre-requisites
 --------------------
 * You have created a project and know the ACTION-ID (use expipe-browser to find it).
-* If it is your first anaconda/expipe session of the day, Open Anaconda ``activate expipe`` - eller må man også ``activate env my project_id`` ?????
+* If it is your first anaconda/expipe session of the day, Open Anaconda promp::
+
+  $ activate expipe
+
+Make sure you are on your desired project environment in expipe::
+
+  $ expipe env status
+
+If you want to activate ``my_project_id``::
+
+  $ expipe env activate my_project_id
 
 Plotting and analysis
 --------------------
