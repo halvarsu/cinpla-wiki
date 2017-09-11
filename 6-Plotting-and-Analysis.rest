@@ -30,7 +30,7 @@ If you only want to look at a particular channel group::
 
   $ expipe analyse ACTION-ID -a all --channel-group 0
 
-**Register cells and transfer data to norstore**
+**Register cells and transfer data to NIRD**
 
 When your are finished with the analysis you want to write a summary of your findings, you can
 annotate the action with::
@@ -43,4 +43,7 @@ Place cell: PC, Spatial cell: SC, Boarder cell: BC.
 
 The tags you want to use should be added to POSSIBLE_TAGS
 
+If you have worked with the data locally (check out data_path in c:/users/your_username/.config/expipe/config.yaml) you will find the results in ``c:/users/your_username/expipe_temp_storage/PROJECT/ACTION-ID/main.exdir/analysis```, you can transfer to NIRD with::
+
+  $ expipe transfer ACTION-ID --from-local
 Go to `SERVER/PROJECT/ACTION-ID/main.exdir/analysis` to check out the results.
