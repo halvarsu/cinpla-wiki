@@ -71,7 +71,7 @@ Remove processing if you do not know what it is for.
     hostname: user@ipaddress
   nird:
     data_path: /projects/NS9048K/NORSTORE_OSL_DISK/NS9048K/server
-    username: <norstore username>
+    username: <nird username>
     hostname: login.nird.sigma2.no
   firebase:
     email: your@email.com
@@ -82,7 +82,7 @@ Remove processing if you do not know what it is for.
       databaseURL: https://expipe-26506.firebaseio.com
       storageBucket: expipe-26506.appspot.com
 
-Here we have defined two servers, one for `norstore` and one for a `processing`
+Here we have defined two servers, one for `nird` and one for a `processing`
 server e.g. your office computer; see [usage](address to usage).
 Note that you can add arbitrary names for servers.
 
