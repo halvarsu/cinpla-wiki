@@ -52,8 +52,8 @@ Furthermore if you want help on one particular command::
   data_path: c:/users/uiousername/expipe_temp_storage
   nird:
     data_path: /projects/NS9048K/NORSTORE_OSL_DISK/NS9048K/server
-    username: <norstore username>
-    hostname: login.norstore.uio.no
+    username: <nird username>
+    hostname: login.nird.sigma2.no
 
 Transfer data to and from server
 --------------------------------
@@ -68,17 +68,17 @@ In the ``config.yaml`` file (see :ref:`installation page <installation_page>`) y
   data_path: c:/users/uiousername/expipe_temp_storage
   nird:
     data_path: /projects/NS9048K/NORSTORE_OSL_DISK/NS9048K/server
-    username: <norstore username>
-    hostname: login.norstore.uio.no
+    username: <nird username>
+    hostname: login.nird.sigma2.no
 
 Here ``nird`` is the server name, the first ``data_path`` is the local path and
-the ``data_path`` under ``norstore`` we refer to as the server path. To transfer
+the ``data_path`` under ``nird`` we refer to as the server path. To transfer
 local data to the server, in it's most simple form the ``transfer`` command can be
 used as::
 
   $ expipe transfer ACTION-ID --from-local
 
-This is because ``norstore`` is the default server name. In order to transfer
+This is because ``nird`` is the default server name. In order to transfer
 to a different server we need to add it's name with the ``--server`` command::
 
   $ expipe transfer ACTION-ID --from-local --server processing
@@ -215,7 +215,7 @@ If you only want to look at a particular channel group::
 
   $ expipe analyse ACTION-ID -a all --channel-group 0
 
-**Register cells and transfer data to norstore**
+**Register cells and transfer data to nird**
 
 When your are finished with the analysis you want to write a summary of your findings, you can
 annotate the action with::
