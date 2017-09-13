@@ -73,6 +73,28 @@ To mount the disk on Linux, you need to install SSHFS and mount our project fold
 
 Remember to replace "nird_username" with your username at NIRD and also use your NIRD password. 
 
+## Mounting on MacOS
+   
+    # Create a folder in $HOME folder (if it doesn't exist)
+    mkdir ~/.local
+    mkdir ~/.local/bin
+
+    # Add the line below to the file ~/.profile (or similar file):
+    export PATH="~/.local/bin:/opt/local/bin:/opt/local/sbin:$PATH"
+
+    # apply changes
+    source ~/.profile
+
+    # set up a little executable script that will create the command "mount_nird" to mount nird as the 
+    # folder $HOME/nird.
+    printf '#!/bin/bash\nmkdir $HOME/nird\nchown $USER $HOME/nird\nsshfs nird_username@login.nird.sigma2.no:/projects/NS9048K/NORSTORE_OSL_DISK/NS9048K $HOME/nird' >> ~/.local/bin/mount_nird
+    chmod +x ~/.local/bin/mount_nird
+
+    # to unmount nird, simply type:
+    umount ~/nird
+
+    # NOTES: the procedure may require that you install sshfs first, try doing that using e.g., homebrew or macports
+
 ### More information about Norstore
 
 Norstore Wiki on UiO 
