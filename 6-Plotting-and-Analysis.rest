@@ -1,11 +1,12 @@
 Pre-requisites
 --------------------
 * You have created a project and know the ACTION-ID (use expipe-browser to find it).
-* If it is your first anaconda/expipe session of the day, Open Anaconda promp::
+* If it is your first anaconda/expipe session of the day, Open Anaconda prompt::
 
   $ activate expipe
 
 Make sure you are on your desired project environment in expipe::
+Why is this important - why not just start jupyter notebook ?
 
   $ expipe env status
 
@@ -16,7 +17,7 @@ If you want to activate ``my_project_id``::
 Plotting and analysis
 --------------------
 
-**Plotting with notebook**::
+**Plotting with jupyter notebook**::
 
   $ expipe generate-notebook ACTION-ID --run
 
