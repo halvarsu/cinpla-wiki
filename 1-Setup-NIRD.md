@@ -10,6 +10,7 @@ tilsvarende med alle filer.
 
 Eventuelt
 `chmod -R g+rwx mappenavn`
+`chgrp ns9048k -R <mappenavn>`
 
 
 # Register to get access to NIRD
