@@ -27,6 +27,29 @@ PS! It might take a couple of days before your account is ready for use.
 
 -----------------------------
 
+# Set up ssh public key authentification
+For password-free access to Nird
+## Mac/Linux:
+```
+# generate private/public keys (skip this if you already have ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub files)
+$ ssh-keygen -t rsa
+# copy public key (do NOT distribute private key!)
+$ scp .ssh/id_rsa.pub <nird-username>@login.nird.sigma2.no:.ssh/.
+# login to Nird:
+ssh <nird-username>@login.nird.sigma2.no
+# add public key to .ssh/authorized_keys file
+cat .ssh/id_rsa.pub >> .ssh/authorized_keys
+# remove write access
+chmod 400 .ssh/authorized_keys
+chmod 500 .ssh 
+# logout ...
+```
+##  Windows
+(to be added)
+
+-----------------------------
+
+
 # Mounting the disk
 
 ## Mounting on Windows
