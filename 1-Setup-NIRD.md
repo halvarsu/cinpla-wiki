@@ -27,7 +27,7 @@ PS! It might take a couple of days before your account is ready for use.
 
 -----------------------------
 
-# Set up ssh public key authentification
+# Set up ssh public key authentication
 For password-free access to Nird
 ## Mac/Linux:
 ```
